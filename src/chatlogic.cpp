@@ -104,7 +104,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
                 {
                     std::string tokenType = tokenStr.substr(0, posTokenInfo);
                     std::string tokenInfo = tokenStr.substr(posTokenInfo + 1, tokenStr.size() - 1);
-
+                  
                     // add token to vector
                     tokens.push_back(std::make_pair(tokenType, tokenInfo));
                 }
@@ -167,7 +167,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
                             std::unique_ptr <GraphEdge> edge = std::make_unique<GraphEdge>(id);
                             edge->SetChildNode(childNode->get());
                             edge->SetParentNode(parentNode->get());
-                            _edges.push_back(std::move(edge));
+                            //_edges.push_back(std::move(edge));
 
                             // find all keywords for current node
                             AddAllTokensToElement("KEYWORD", tokens, *edge);

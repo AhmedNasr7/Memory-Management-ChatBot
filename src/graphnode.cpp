@@ -43,12 +43,10 @@ void GraphNode::MoveChatbotHere(ChatBot chatbot)
 void GraphNode::MoveChatbotToNewNode(GraphNode *newNode)
 {
     newNode->MoveChatbotHere(std::move(_chatBot));
-    //chatB
-  ot = nullptr; // invalidate pointer at source
+    //chatBot= nullptr; // invalidate pointer at source
 }
 ////
-//// EOF STUDENT CO
-DE
+//// EOF STUDENT COde
 
 GraphEdge *GraphNode::GetChildEdgeAtIndex(int index)
 {
