@@ -85,7 +85,7 @@ _chatLogic->SetChatbotHandle(this);
   source._currentNode=nullptr;
 }
 ChatBot &ChatBot:: operator=(ChatBot &&source){
-  std::cout << "ChatBot Move operator" << std::endl;
+  std::cout << "ChatBot Move Assignment operator" << std::endl;
   
     if (this == &source)
     {
